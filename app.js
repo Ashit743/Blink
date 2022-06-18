@@ -154,13 +154,11 @@ Promise.all([
       // var ctx = canvas.getContext('2d');
       var t2 = performance.now();//ms
       var timeS2 = Date.now()
-      // ctx.font = "48px serif";
-      // ctx.fillText("FPS:"+ Math.floor(1000.0/(t2-t1)), 10, 50);
-      // ctx.fillText("Count:"+blinkCount, 10, 100);
+
       t1 = t2;
       
-      if((timeS2-timeS)>300000){ //5mins
-         if(blinkCount<200){
+      if((timeS2-timeS)>300000){ //5mins 300000 
+         if(blinkCount<100){//100
           // console.log('plz blink');
           if (Notification.permission === "granted") {
             showNotification1()
