@@ -133,7 +133,7 @@ Promise.all([
         return sum + element;
       }, 0);
       meanIrisC = meanIrisC / irisC.length;
-      let vThreshold = 1.5;
+      let vThreshold = 1.3;
   
       let currentIrisC = irisC[irisC.length-1];
       if(irisC.length==100){
@@ -185,7 +185,6 @@ Promise.all([
       let Blinkk = document.getElementById('blinkkk')
       var value = blinkCount
       Blinkk.innerHTML = value
-
     }, 0)
   
   }
